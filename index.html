@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCrush — Learn Cloud the Way It's Run in Production</title>
+<meta name="description" content="TechCrush trains cloud engineers on the tools production teams actually use: Azure, AWS, DevOps pipelines, and infrastructure as code.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="pipeline-rail" aria-hidden="true">
+  <div class="pipeline-rail__fill"></div>
+</div>
+
+<header class="site-header">
+  <a href="#top" class="logo">tech<span>crush</span><span class="logo-dot">_</span></a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="#curriculum">Curriculum</a>
+    <a href="#pipeline">How it runs</a>
+    <a href="#instructors">Instructors</a>
+    <a href="#cohort">Cohorts</a>
+  </nav>
+  <a href="#cohort" class="btn btn--ghost nav-cta">Apply now</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Cloud Computing &amp; DevOps Cohorts</p>
+      <h1>Learn cloud the way it's <em>actually run</em> in production.</h1>
+      <p class="hero__sub">
+        TechCrush is a hands-on training program in cloud infrastructure and DevOps —
+        Azure, AWS, Terraform, CI/CD, and the on-call reality of keeping systems up.
+        Taught by engineers who ship this stuff for real clients, not just slides.
+      </p>
+      <div class="hero__ctas">
+        <a href="#cohort" class="btn btn--primary">Join the next cohort</a>
+        <a href="#curriculum" class="btn btn--outline">See the curriculum</a>
+      </div>
+      <dl class="hero__stats">
+        <div><dt>Weekly</dt><dd>live infra labs</dd></div>
+        <div><dt>Real</dt><dd>client-grade projects</dd></div>
+        <div><dt>Azure + AWS</dt><dd>multi-cloud track</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__terminal" role="img" aria-label="Terminal demo deploying the TechCrush site to Azure Static Web Apps, ending with a welcome message">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--teal"></span>
+          <span class="terminal__title">kalon@techcrush: ~/site</span>
+        </div>
+        <pre class="terminal__body"><code id="terminal-output"></code><span class="cursor">▌</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / CREDIBILITY STRIP -->
+  <section class="stack-strip" aria-label="Technologies covered in the curriculum">
+    <div class="stack-strip__track">
+      <span>Azure</span><span>AWS</span><span>Terraform</span><span>Kubernetes</span>
+      <span>GitHub Actions</span><span>Docker</span><span>Linux</span><span>PostgreSQL</span>
+      <span>Azure</span><span>AWS</span><span>Terraform</span><span>Kubernetes</span>
+      <span>GitHub Actions</span><span>Docker</span><span>Linux</span><span>PostgreSQL</span>
+    </div>
+  </section>
+
+  <!-- PIPELINE / HOW IT RUNS -->
+  <section class="pipeline" id="pipeline">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>How a cohort runs</p>
+      <h2>Structured like the pipelines you'll build.</h2>
+      <p class="section-sub">Every stage has to pass before the next one runs — same as CI/CD.</p>
+    </div>
+
+    <ol class="pipeline-stages">
+      <li class="stage">
+        <div class="stage__head">
+          <span class="stage__tag">learn</span>
+          <span class="stage__status stage__status--pass">✓ pass</span>
+        </div>
+        <h3>Foundations</h3>
+        <p>Linux, networking, Git, and cloud fundamentals — the layer everything else stands on.</p>
+      </li>
+      <li class="stage">
+        <div class="stage__head">
+          <span class="stage__tag">build</span>
+          <span class="stage__status stage__status--pass">✓ pass</span>
+        </div>
+        <h3>Infrastructure as Code</h3>
+        <p>Provision real environments with Terraform. Break them. Fix them. Understand why.</p>
+      </li>
+      <li class="stage">
+        <div class="stage__head">
+          <span class="stage__tag">deploy</span>
+          <span class="stage__status stage__status--running">● running</span>
+        </div>
+        <h3>CI/CD &amp; DevSecOps</h3>
+        <p>Pipelines, secrets management, container security, and the checks that gate a release.</p>
+      </li>
+      <li class="stage">
+        <div class="stage__head">
+          <span class="stage__tag">ship</span>
+          <span class="stage__status stage__status--queued">○ queued</span>
+        </div>
+        <h3>Capstone &amp; Portfolio</h3>
+        <p>Design and deploy a production-style system end to end. This is what you show employers.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="curriculum" id="curriculum">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Curriculum</p>
+      <h2>Four tracks. One skill set employers are short on.</h2>
+    </div>
+
+    <div class="track-grid">
+      <article class="track-card">
+        <span class="track-card__glyph">☁</span>
+        <h3>Cloud Fundamentals</h3>
+        <p>Compute, storage, networking, and identity across Azure and AWS — how the pieces actually fit together.</p>
+      </article>
+      <article class="track-card">
+        <span class="track-card__glyph">⎇</span>
+        <h3>DevOps &amp; CI/CD</h3>
+        <p>GitHub Actions and Azure DevOps pipelines, from first commit to gated production deploy.</p>
+      </article>
+      <article class="track-card">
+        <span class="track-card__glyph">▦</span>
+        <h3>Infrastructure &amp; Kubernetes</h3>
+        <p>Terraform modules, container orchestration, and monitoring stacks you'll actually operate.</p>
+      </article>
+      <article class="track-card">
+        <span class="track-card__glyph">◆</span>
+        <h3>Security &amp; Compliance</h3>
+        <p>IAM, secrets, scanning, and the shift-left practices banking-grade clients require.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS -->
+  <section class="instructors" id="instructors">
+    <div class="instructors__inner">
+      <div class="section-head section-head--left">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Who's teaching</p>
+        <h2>Engineers on-call for real infrastructure, in the classroom too.</h2>
+        <p class="section-sub">
+          TechCrush instructors work day to day on production Azure and AWS environments —
+          the same debugging, the same incident response, the same Terraform plans you'll learn to read.
+          You're not learning theory secondhand.
+        </p>
+      </div>
+      <div class="instructors__log">
+        <pre><code>$ whoami --role=instructor
+DevOps / Infrastructure Engineer
+› Multi-cloud platform work (Azure, AWS, GKE, AKS)
+› CI/CD pipelines for production client systems
+› DevSecOps: IAM, secrets, container &amp; IaC scanning
+› Teaches what shipped this week, not last decade</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- COHORT / CTA -->
+  <section class="cohort" id="cohort">
+    <div class="cohort__card">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Next cohort</p>
+      <h2>Applications are open.</h2>
+      <p class="section-sub">Seats are limited to keep labs hands-on. Apply and we'll follow up with dates and pricing.</p>
+      <form class="cohort__form" id="cohort-form">
+        <label class="sr-only" for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn--primary">Request an invite</button>
+      </form>
+      <p class="cohort__note" id="form-note">We'll only use this to send cohort details — no spam.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer__top">
+    <a href="#top" class="logo logo--footer">tech<span>crush</span><span class="logo-dot">_</span></a>
+    <nav aria-label="Footer">
+      <a href="#curriculum">Curriculum</a>
+      <a href="#pipeline">How it runs</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#cohort">Cohorts</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> TechCrush. Built and deployed as an Azure Static Web App.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
